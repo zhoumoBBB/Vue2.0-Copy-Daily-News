@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>topnews</title><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel=stylesheet href=./static/css/reset.css><link href=/static/css/app.d8aab002d97e409d43ce942bf5074dd3.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.c4186e6a90141d0b44a3.js></script><script type=text/javascript src=/static/js/vendor.32c2787d0f22aa916c35.js></script><script type=text/javascript src=/static/js/app.20dab18c376d39604d95.js></script></body><script type=text/javascript>(function (doc, win) {
+      var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              if(clientWidth>=640){
+                  docEl.style.fontSize = '100px';
+              }else{
+                  docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+              }
+          };
+
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+  })(document, window);</script></html>
